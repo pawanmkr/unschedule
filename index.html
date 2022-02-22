@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="scss/style.css">
+
+    <title>schedule.app</title>
+
+</head>
+
+<body>
+
+    <div class="main-container">
+
+
+        <div class="nav-menu">
+
+            <div class="navigations">
+
+                <div class="stopwatch navelement">
+                    <!-- <div class="pause">
+
+                        <img src="images/pause.png" class="pause-button"/>
+                    </div> -->
+                    <div class="stopwatch-button">
+                        <h2 class="htags stopwatch-btn-text">start time count</h2>
+                    </div>
+    
+                    <div class="stopwatch-count">
+                        <h1 class="realtime-count htags">00:00:00s</h1>
+                    </div>
+
+                </div>
+
+                <div class="logo navelement">
+                    <h1 class="htags greetings"></h1>
+                    <a href="https://www.flaticon.com/free-icon/sun_3892333?related_id=3892333&origin=pack" target="_blank">
+                        <img src="images/sun.png" class="sun" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr class="solid divider" color="#888F96">
+
+
+        <div class="top">
+
+            <div class="leftside">
+                
+                <div class="subject subject-elements">
+                    <h4 class="htags subject-code">subject & code</h4>
+                </div>
+    
+                <div class="teacher subject-elements">
+                    <h2 class="htags subject-teacher">teacher name & id</h2>
+                </div>
+
+            </div>
+
+
+            <div class="rightside">
+                <div class="dayndate topright-elements">
+                    <div class="date">
+                        <h2 class="htags" id="date">15 feb 2K22</h2>
+                    </div>
+                    <div class="day small">
+                        <h4 class="htags" id="day">monday</h4>
+                    </div>
+                </div>
+    
+                <div class="timentimeleft topright-elements">
+                    <div class="time">
+                        <h1 class="htags" id="time">09:41: AM</h1>
+                    </div>
+                    <div class="timeleft small">
+                        <h4 class="htags next-lecture-time">next 12:10 pm</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="bottom">
+
+            <div class="weekdays">
+
+                <div class="Monday">
+
+                    <ul>
+                        <li class="weekday">monday</li>
+
+                        <li class="lecture11">computer network</li>
+                        <li class="lecture12">microprocessor & interfacing</li>
+                        <li class="lecture13">software engineering</li>
+                        <li class="free lecture14">4. free</li>
+                        <li class="lecture15">programming in python lab</li>
+                        <li class="lecture16">programming in python lab</li>
+                        <li class="lecture17">life skills and mentoring-4</li>
+                        <li class="free lecture18">8. free</li>
+                    </ul>
+
+                </div>
+            
+                <div class="Tuesday">
+
+                    <ul>
+                        <li class="weekday">tuesday</li>
+
+                        <li class="lecture21">principles of ai</li>
+                        <li class="lecture22">dsa analysis</li>
+                        <li class="lecture23">soft skills</li>
+                        <li class="lecture24">soft skills</li>
+                        <li class="free lecture25">5. free</li>
+                        <li class="lecture26">computer networks lab</li>
+                        <li class="lecture27">computer networks lab</li>
+                        <li class="lecture28">microprocessor & interfacing</li>
+                    </ul>
+
+                </div>
+            
+                <div class="Wednesday">
+                    <ul>
+                        <li class="weekday">wednesday</li>
+
+                        <li class="lecture31">computer networks</li>
+                        <li class="lecture32">microprocessor & interfacing lab</li>
+                        <li class="lecture33">microprocessor & interfacing lab</li>
+                        <li class="lecture34">probability & statistics</li>
+                        <li class="free lecture35">5. free</li>
+                        <li class="lecture36">principles of ai</li>
+                        <li class="lecture37">probability & statistics</li>
+                        <li class="free lecture38">8. free</li>
+                    </ul>
+
+                </div>
+            
+                <div class="Thursday">
+
+                    <ul>
+                        <li class="weekday">thursday</li>
+
+                        <li class="lecture41">software engineering</li>
+                        <li class="lecture42">project-l</li>
+                        <li class="lecture43">computer networks</li>
+                        <li class="free lecture44">4. free</li>
+                        <li class="lecture45">probability & statistics</li>
+                        <li class="lecture46">software engineering lab</li>
+                        <li class="lecture47">software engineering lab</li>
+                        <li class="free lecture48">8. free</li>
+                    </ul>
+
+                </div>
+            
+                <div class="Friday">
+
+                    <ul>
+                        <li class="weekday">friday</li>
+
+                        <li class="lecture51">software engineering</li>
+                        <li class="lecture52">programming in python lab</li>
+                        <li class="lecture53">programming in Python lab</li>
+                        <li class="lecture54">microprocessor and interfacing</li>
+                        <li class="free lecture55">5. free</li>
+                        <li class="lecture56">probability & statistics</li>
+                        <li class="lecture57">principles of ai</li>
+                        <li class="free lecture58">8. free</li>
+                    </ul>
+
+                </div>
+            
+                <div class="Saturday">
+
+                    <ul>
+                        <li class="weekday">saturday</li>
+
+                        <li class="free lecture61">1. free</li>
+                        <li class="lecture62">creativity & critical thinking</li>
+                        <li class="free lecture63">3. free</li>
+                        <li class="free lecture64">4. free</li>
+                        <li class="lecture65">moocs</li>
+                        <li class="free lecture66">6. free</li>
+                        <li class="free lecture67">7. free</li>
+                        <li class="free lecture68">8. free</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
