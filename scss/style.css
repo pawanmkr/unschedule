@@ -270,4 +270,9 @@ li:not(.weekday .tuesday) {
   background-color: aliceblue;
   color: #181C21;
 }
+
+.footer .developerContact {
+  color: #888F96;
+  margin-top: 2em;
+}
 /*# sourceMappingURL=style.css.map */
