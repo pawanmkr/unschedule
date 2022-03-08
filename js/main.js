@@ -1,12 +1,13 @@
 //this is the correct way
-//import * as Utils from './updatelecture.js';
+//import * as Ul from './updatelecture.js';
 //import {default as demo} from './stopwatch.js';
+//import * as Naam from './ignore.js';
 
 
 
 // first of all time
 
-function getPresentData() {
+export function getPresentData() {
 
     var present = new Date();
 
@@ -103,7 +104,7 @@ function getPresentData() {
             var subject = document.querySelector('.subject-code');
         
         
-            if(hours12 == 09 && minutes >= 40) {
+            if(hours12 == 9 && minutes >= 40) {
                 lecture = 1;
         
                 teacher.innerHTML = teachersName[dayCount-1][lecture-1];
@@ -135,7 +136,7 @@ function getPresentData() {
                 teacher.innerHTML = teachersName[dayCount-1][lecture-1];
                 subject.innerHTML = subjectCode[dayCount-1][lecture-1];
             }
-            else if(hours12 == 12 && minutes < 01) {
+            else if(hours12 == 12 && minutes < 1) {
                 lecture = 3;
         
                 teacher.innerHTML = teachersName[dayCount-1][lecture-1];
@@ -155,47 +156,55 @@ function getPresentData() {
                 subject.innerHTML = subjectCode[dayCount-1][lecture-1];
             }
         
-            else if(hours12 == 01 && (minutes >= 00 && minutes <= 40)) {
+            else if(hours12 == 1 && (minutes >= 0 && minutes <= 40)) {
                 lecture = 5;
         
                 teacher.innerHTML = teachersName[dayCount-1][lecture-1];
                 subject.innerHTML = subjectCode[dayCount-1][lecture-1];
             }
         
-            else if(hours12 == 01 && minutes >= 50) {
+            else if(hours12 == 1 && minutes >= 50) {
                 lecture = 6;
         
                 teacher.innerHTML = teachersName[dayCount-1][lecture-1];
                 subject.innerHTML = subjectCode[dayCount-1][lecture-1];
             }
-            else if(hours12 == 02 && minutes <= 30) {
+            else if(hours12 == 2 && minutes <= 30) {
                 lecture = 6;
         
                 teacher.innerHTML = teachersName[dayCount-1][lecture-1];
                 subject.innerHTML = subjectCode[dayCount-1][lecture-1];
             }
         
-            else if(hours12 == 02 && minutes >= 40) {
+            else if(hours12 == 2 && minutes >= 40) {
                 lecture = 7;
         
                 teacher.innerHTML = teachersName[dayCount-1][lecture-1];
                 subject.innerHTML = subjectCode[dayCount-1][lecture-1];
             }
-            else if(hours12 == 03 && minutes <= 20) {
+            else if(hours12 == 3 && minutes <= 20) {
                 lecture = 7;
         
                 teacher.innerHTML = teachersName[dayCount-1][lecture-1];
                 subject.innerHTML = subjectCode[dayCount-1][lecture-1];
             }
         
-            else if(hours12 == 03 && minutes >= 30) {
+            else if(hours12 == 3 && minutes >= 30) {
                 lecture = 8;
         
                 teacher.innerHTML = teachersName[dayCount-1][lecture-1];
                 subject.innerHTML = subjectCode[dayCount-1][lecture-1];
             }
-            else if(hours12 == 04 && minutes <= 10) {
+            else if(hours12 == 4 && minutes <= 10) {
                 lecture = 8;
+        
+                teacher.innerHTML = teachersName[dayCount-1][lecture-1];
+                subject.innerHTML = subjectCode[dayCount-1][lecture-1];
+            }
+
+            //-------testing
+            else if(hours12 == 8 && minutes >= 10) {
+                lecture = 2;
         
                 teacher.innerHTML = teachersName[dayCount-1][lecture-1];
                 subject.innerHTML = subjectCode[dayCount-1][lecture-1];
@@ -234,7 +243,7 @@ function getPresentData() {
         
             //calculate for seconds also when only 1minute is left
         
-            if(hours12 == 09 && minutes >= 40) {
+            if(hours12 == 9 && minutes >= 40) {
                 
                 // total minutes left fot the next lecture calcutlation
                 var leftMinutes = (60 - minutes) + 30;
@@ -280,28 +289,28 @@ function getPresentData() {
                 nlc.innerHTML = "next in " + leftMinutes + " m" ;
             }
         
-            else if(hours12 == 01 && (minutes >= 00 && minutes <= 49)) {
+            else if(hours12 == 1 && (minutes >= 0 && minutes <= 49)) {
                 
                 // total minutes left fot the next lecture calcutlation
                 var leftMinutes = 50 - minutes;
                 nlc.innerHTML = "next in " + leftMinutes + " m" ;
             }
         
-            else if(hours12 == 01 && minutes >= 50) {
+            else if(hours12 == 1 && minutes >= 50) {
                 
                 // total minutes left fot the next lecture calcutlation
                 var leftMinutes = (60 - minutes) + 40;
                 nlc.innerHTML = "next in " + leftMinutes + " m" ;
             }
         
-            else if(hours12 == 02 && minutes <= 39) {
+            else if(hours12 == 2 && minutes <= 39) {
                 
                 // total minutes left fot the next lecture calcutlation
                 var leftMinutes = 40 - minutes;
                 nlc.innerHTML = "next in " + leftMinutes + " m" ;
             }
         
-            else if(hours12 == 02 && minutes >= 40) {
+            else if(hours12 == 2 && minutes >= 40) {
                 
                 // total minutes left fot the next lecture calcutlation
                 var leftMinutes = (60 - minutes) + 30;
@@ -407,7 +416,7 @@ var teachersName = [
     //monday
     ["kanwalpreet kaur", "sukhmanpreet singh", "neha", null, "saroj kumar", "saroj kumar", "monika" ],
     //tuesday
-    ["palvi sharma", "neha", "niket kumar tiwari", "niket kumar tiwari", null, "nancy singla", "nancy singla", "sukhmanpreet singh"],
+    ["er. jyoti", "er. sakshi", "er. jyoti", "er. jyoti", null, "dr. abhilasha sharma", "ms. gurinder kaur", null],
     //wednesday
     ["kanwaldeep kaur", "priya rana", "priya rana", "gurinder kaur", null, "palvi sharma", "gurinder kaur", null],
     //thursday
@@ -426,7 +435,7 @@ var subjectCode = [
     //monday
     ['computer network', 'microprocessor and interfacing', "software engineering" ,null, "programming in python lab", "programming in python lab", "life skills and mentoring", null],
     //tuesday
-    ["principles of artificial intelligence", "data structure & algorithm analysis", "soft skills", "soft skills", null, "computer networks lab", "computer networks lab", "microprocessor and interfaicng lab"],
+    ["microprocessor & interfacing", "computer network", "microprocessor & interfacing lab", "microprocessor & interfacing lab", null, "principles of artificial intelligence", "probability & statistics", null],
     //wednesday
     ["computer networks", "microprocessor & interfacing lab", "microprocessor & interfacing lab", "probability & statistics", null, "principles of artificial intelligence", "probability & statistics", null],
     //friday
@@ -436,5 +445,3 @@ var subjectCode = [
     //saturday
     [null, "creativity & critical thinking", null, null, "moocs", null, null, null]
 ];
-
-
